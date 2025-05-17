@@ -2,17 +2,26 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class TarefaController : MonoBehaviour
 {
     public Image bgImage;
     public Image circleImage; 
-    public float fillSpeed = 0.1f;
+
+    public TMP_Text nome;
+    public TMP_Text descricao;
+    public float velocidade;
+
+    private void Start()
+    {
+
+    }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        circleImage.fillAmount += fillSpeed * Time.deltaTime;
+        circleImage.fillAmount += Time.deltaTime/velocidade;
         circleImage.fillAmount = Mathf.Clamp01(circleImage.fillAmount);
 
         if(circleImage.fillAmount == 1){

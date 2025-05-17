@@ -259,8 +259,13 @@ MonoBehaviour:
   player: {fileID: 1283455849}
   taskAtiva: 0
   TaskType: {fileID: 1322690457316107414, guid: f1b0a9b04448f0541b940d06dedb274a, type: 3}
+  PopUp: {fileID: 0}
   TaskManager: {fileID: 24932204}
-  total: 0
+  isBeenDone: 0
+  nome: 
+  descricao: 
+  tempoRestante: 0
+  tempo: 5
 --- !u!1 &24932203
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,8 +437,13 @@ MonoBehaviour:
   player: {fileID: 1283455849}
   taskAtiva: 0
   TaskType: {fileID: 1322690457316107414, guid: f1b0a9b04448f0541b940d06dedb274a, type: 3}
+  PopUp: {fileID: 0}
   TaskManager: {fileID: 24932204}
-  total: 0
+  isBeenDone: 0
+  nome: 
+  descricao: 
+  tempoRestante: 0
+  tempo: 5
 --- !u!58 &128251876
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -688,8 +698,8 @@ GameObject:
   - component: {fileID: 470994887}
   - component: {fileID: 470994888}
   m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Player
+  m_Name: Collider
+  m_TagString: Morgana
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1313,8 +1323,13 @@ MonoBehaviour:
   player: {fileID: 1283455849}
   taskAtiva: 0
   TaskType: {fileID: 1322690457316107414, guid: f1b0a9b04448f0541b940d06dedb274a, type: 3}
+  PopUp: {fileID: 0}
   TaskManager: {fileID: 24932204}
-  total: 0
+  isBeenDone: 0
+  nome: 
+  descricao: 
+  tempoRestante: 0
+  tempo: 5
 --- !u!1 &1167604964
 GameObject:
   m_ObjectHideFlags: 0
@@ -1622,7 +1637,7 @@ MonoBehaviour:
   totalTasks: 0
   totalTasksAtivas: 0
   duracaoTotal: 60
-  tempoEntreTasks: 5
+  tempoEntreTasks: 2
   tempoTotal: 0
   tempoSemTask: 0
   tempoUltimaTask: 0
@@ -1855,8 +1870,13 @@ MonoBehaviour:
   player: {fileID: 1283455849}
   taskAtiva: 0
   TaskType: {fileID: 1322690457316107414, guid: f1b0a9b04448f0541b940d06dedb274a, type: 3}
+  PopUp: {fileID: 0}
   TaskManager: {fileID: 24932204}
-  total: 0
+  isBeenDone: 0
+  nome: 
+  descricao: 
+  tempoRestante: 0
+  tempo: 5
 --- !u!1 &1655697661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2167,6 +2187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tarefa: {fileID: 8810452334474936074, guid: 9abb9abb2de4fc1489099636830dad15, type: 3}
+  _t: {fileID: 0}
   TarefaBar: {fileID: 1481866760}
 --- !u!4 &2041173951
 Transform:
