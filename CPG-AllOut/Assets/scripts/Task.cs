@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,27 +9,26 @@ public class Task : MonoBehaviour
     public Player player;
     public bool active = false;
     [SerializeField]
-    public Image imagem;
+    //public GameObject _PressTask;
+    //public GameObject _QTATask;
+    public GameObject TaskType;
+    public Transform TaskManager;
 
     public int total = 0;
-    
-    
-    private void OnTriggerEnter2D(Collider2D other)
+
+    private void Start()
     {
-        player.isTasking = true;
-        active = true;
-        Debug.Log("entrei");
-        // ativa hud minigame 
+        StartCoroutine(Fade());
+        Instantiate(TaskType, TaskManager, false);
     }
 
-    private void Update()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (active)
-        {
-            if (Input.GetKey(KeyCode.Space))
-            {
-                imagem.fillAmount += 0.05f;
-            }
-        }
+        player.isTasking = true;    
+        active = true;
+    }
+
+    private IEnumerator Fade(){
+        yield return new WaitForSeconds(1f);
     }
 }
