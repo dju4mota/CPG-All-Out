@@ -36,7 +36,7 @@ public class PressTask : MonoBehaviour
         {
             player.isTasking = false;
             gameManager.totalTasksAtivas--;
-            GameManager.i.pontuacao(1);
+            task.CompleteTask();
             Destroy(task.notificacao);
             task.gameObject.SetActive(false);
             Destroy(gameObject);

@@ -46,20 +46,15 @@ public class Task : MonoBehaviour
             Destroy(PopUp);
             Destroy(notificacao);
             gameObject.SetActive(false);
-            GameManager.i.pontuacao(-1);
             GameManager.i.totalTasksAtivas--;
         }
 
         if (gameObject != null)
         {
-            if (tempo < 2 * tempoMax / 3 && tempo > tempoMax/ 3)
-            {
-                StartCoroutine(Pisca(1));
-            } 
-            else if (tempo < tempoMax / 3)
+            if (tempo < tempoMax / 3)
             {
                 StartCoroutine(Pisca(0.5f));
-            }    
+            }
         }
     }
 
@@ -85,9 +80,20 @@ public class Task : MonoBehaviour
 
     IEnumerator Pisca(float temp)
     {
-        Debug.Log(temp);
-        spriteRenderer.enabled = !spriteRenderer.enabled;
         yield return new WaitForSeconds(temp);
+        spriteRenderer.enabled = !spriteRenderer.enabled;
+        StartCoroutine(Pisca(temp));
+    }
+
+    public void CompleteTask()
+    {
+        GameManager.i.pontuacao((int)tempo*10);
+    }
+
+
+    public void FailTask()
+    {
+        GameManager.i.pontuacao(-(int)tempoMax);
     }
     
 }
