@@ -2,11 +2,15 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float velocidade = 5f;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
+    public float speed = 5f;
+    [SerializeField]
+    private Rigidbody2D rb;
+    private Vector2 moveDirection;
+    
     void Start()
     {        
+        
     }
 
     void Update()
@@ -14,11 +18,16 @@ public class Player : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        Vector3 movimento = new Vector3(horizontal, 0, vertical).normalized;
-
-        if (movimento.magnitude >= 0.1f)
+        moveDirection = new Vector2(horizontal, vertical);
+    }
+    private void FixedUpdate(){
+        Vector3 movePosition = (speed * Time.fixedDeltaTime * moveDirection.normalized) + rb.position;
+        rb.MovePosition(movePosition);
+        
+        if (moveDirection != Vector2.zero) 
         {
-            transform.Translate(movimento * velocidade * Time.deltaTime);
+            float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
         }
     }
 }
