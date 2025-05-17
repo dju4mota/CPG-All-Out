@@ -7,15 +7,13 @@ public class PressTask : MonoBehaviour
     public float fillSpeed;
     public Player player;
     public GameManager gameManager;
-    public Transform TaskParent;
-    Vector3 offset = new(0, 1f, 0);
+    Vector3 offset = new Vector3(2f, 2f, 0);
 
     private void Start()
     {
-        TaskParent = GetComponentInParent<>
         player = FindFirstObjectByType<Player>();
         gameManager = FindFirstObjectByType<GameManager>();
-        circleImage.rectTransform.position =  Camera.main.WorldToScreenPoint(player.transform.position + offset);
+        circleImage.rectTransform.position =  Camera.main.WorldToScreenPoint( player.transform.position + offset);
     }
 
     void Update()
@@ -35,7 +33,7 @@ public class PressTask : MonoBehaviour
         if (circleImage.fillAmount >= 1)
         {
             player.isTasking = false;
-          
+            gameManager.totalTasksAtivas--;
             Destroy(gameObject);
         }
     }

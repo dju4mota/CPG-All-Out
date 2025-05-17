@@ -92,6 +92,7 @@ MonoBehaviour:
   circleImage: {fileID: 3017429715632311906}
   fillSpeed: 1
   player: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1 &2080834956390222002
 GameObject:
   m_ObjectHideFlags: 0
