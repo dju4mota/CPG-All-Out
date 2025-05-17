@@ -124,7 +124,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: mapa
     originalName: 
-    pivot: {x: 0.5316373, y: -0.23394495}
+    pivot: {x: 0.5316373, y: -0.2324159}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -157,7 +157,7 @@ ScriptedImporter:
       additiveSortOrder: 0
       cellRect:
         x: 145
-        y: 153
+        y: 152
         width: 1533
         height: 654
       spriteId: 9d01b1e893081d642b3ed438a59ae095

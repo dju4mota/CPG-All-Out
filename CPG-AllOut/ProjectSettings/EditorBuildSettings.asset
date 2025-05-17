@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 101e139f6377c30429531845189f30c8
   - enabled: 1
+    path: Assets/Scenes/Felipe.unity
+    guid: 48b0c2ca99b37874fb55d4fbd7c1b06e
+  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 4b8dec10f16b3df47b8e5ab3a4b894ff
   m_configObjects:
