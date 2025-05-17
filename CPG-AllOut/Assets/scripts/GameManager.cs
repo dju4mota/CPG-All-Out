@@ -63,13 +63,13 @@ public class GameManager : MonoBehaviour
             {
                 tasks[index].gameObject.SetActive(true);
                 tasks[index].taskAtiva = true;
+                tasks[index].Inicia();
                 break;
             }
 
         }
         totalTasks++;
         totalTasksAtivas++;
-        Debug.Log("Sorteia: " + totalTasks);
     }
 
     int sorteiaPosicao() {

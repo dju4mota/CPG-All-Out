@@ -7,19 +7,21 @@ public class PressTask : MonoBehaviour
     public float fillSpeed;
     public Player player;
     public GameManager gameManager;
-    Vector3 offset = new Vector3(2f, 2f, 0);
+    public Task task;
+    Vector3 offset = new(0f, 1f, 0);
 
     private void Start()
     {
         player = FindFirstObjectByType<Player>();
         gameManager = FindFirstObjectByType<GameManager>();
-        circleImage.rectTransform.position =  Camera.main.WorldToScreenPoint( player.transform.position + offset);
+        circleImage.rectTransform.position =  Camera.main.WorldToScreenPoint(task.transform.position + offset);
     }
 
     void Update()
     {
         if(Input.GetKey(KeyCode.M))
         {
+            player.isTasking = true;
             Debug.Log("subingo");
             circleImage.fillAmount += fillSpeed * Time.deltaTime;
             circleImage.fillAmount = Mathf.Clamp01(circleImage.fillAmount);
@@ -34,7 +36,9 @@ public class PressTask : MonoBehaviour
         {
             player.isTasking = false;
             gameManager.totalTasksAtivas--;
+            task.gameObject.SetActive(false);
             Destroy(gameObject);
+
         }
     }
 }
