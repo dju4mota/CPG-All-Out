@@ -34,6 +34,7 @@ public class Task : MonoBehaviour
 
     private IEnumerator Fade(){
         yield return new WaitForSeconds(2f);
+        gameManager.I.totalTasksAtivas--;
         //Destroy(gameObject);
         gameObject.SetActive(false);
     }
