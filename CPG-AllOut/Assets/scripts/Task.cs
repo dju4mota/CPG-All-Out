@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Task : MonoBehaviour
 {
     public Player player;
-    public bool active = false;
+    public bool taskAtiva = false;
     [SerializeField]
     //public GameObject _PressTask;
     //public GameObject _QTATask;
@@ -16,19 +16,26 @@ public class Task : MonoBehaviour
 
     public int total = 0;
 
-    private void Start()
-    {
-        StartCoroutine(Fade());
-        Instantiate(TaskType, TaskManager, false);
-    }
 
+    public void Inicia()
+    {
+        taskAtiva = true;
+    }
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
-        player.isTasking = true;    
-        active = true;
+        if (other.CompareTag("Player"))
+        {
+            player.isTasking = true;
+            StartCoroutine(Fade());
+            Instantiate(TaskType, TaskManager, false);
+        }
     }
 
     private IEnumerator Fade(){
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
+        //Destroy(gameObject);
+        gameObject.SetActive(false);
     }
+    
 }

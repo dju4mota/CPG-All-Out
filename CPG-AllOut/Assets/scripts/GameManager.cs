@@ -17,29 +17,67 @@ public class GameManager : MonoBehaviour
     public int pontos;
     public int dinheiros; 
     
-    void Start()
-    {
-        
-    }
     
     void Update()
     {
         tempoTotal = Time.time;
         tempoSemTask = Time.time - tempoUltimaTask;
+        
         if (tempoSemTask > tempoEntreTasks)
         {
             tempoUltimaTask = Time.time;
             tempoSemTask = 0;
-            // gamedesign foda 
-            sorteiaTask();
+
+            switch (totalTasks) {
+                case 0:
+                case 1:
+                    sorteiaTask();
+                    break;
+                case 2:
+                    sorteiaTask();
+                    sorteiaTask();
+                    break;
+                case 4:
+                    sorteiaTask();
+                    sorteiaTask();
+                    sorteiaTask();
+                    break;
+                case 7: 
+                    sorteiaTask();
+                    sorteiaTask();
+                    break;
+                case >7:
+                    sorteiaTask();
+                    break;
+            }
+            
         }
     }
 
     void sorteiaTask() // sorteio ?? 
     {
-        int index = Random.Range(0, tasks.Length);
-        tasks[index].gameObject.SetActive(true);
+        while (true)
+        {
+            if (totalTasksAtivas == tasks.Length)
+                return;
+            
+            int index = Random.Range(0, tasks.Length);
+            tasks[index].gameObject.SetActive(true);
+            
+            if (!tasks[index].taskAtiva)
+            {
+                tasks[index].taskAtiva = true;
+                break;
+            }
+        }
+        
+        //Instantiate(tasks[index], new Vector3(sorteiaPosicao(),sorteiaPosicao(),0), Quaternion.identity);
         totalTasks++;
         totalTasksAtivas++;
+        Debug.Log("Sorteia: " + totalTasks);
+    }
+
+    int sorteiaPosicao() {
+        return Random.Range(5, 10);
     }
 }
