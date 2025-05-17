@@ -20,14 +20,15 @@ public class TarefaController : MonoBehaviour
         }
     }
 
-    void Complete(){
-
+    IEnumerator Complete(){
+        bgImage.color = Color.green;
+        yield return new WaitForSeconds(0.25f);
+        Destroy(gameObject);
     }
 
     IEnumerator Fail(){
         bgImage.color = Color.red;
         yield return new WaitForSeconds(0.25f);
         Destroy(gameObject);
-
     }
 }

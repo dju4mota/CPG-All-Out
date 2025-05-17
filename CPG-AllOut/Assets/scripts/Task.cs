@@ -13,7 +13,7 @@ public class Task : MonoBehaviour
     public int total = 0;
     
     
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         player.isTasking = true;
         active = true;
@@ -25,9 +25,9 @@ public class Task : MonoBehaviour
     {
         if (active)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space))
             {
-                imagem.fillAmount += 0.02f;
+                imagem.fillAmount += 0.05f;
             }
         }
     }
