@@ -110,8 +110,6 @@ public class GameManager : MonoBehaviour
                 break;
             }
         }
-        totalTasks++;
-        totalTasksAtivas++; 
     }
 
     int sorteiaPosicao() {
