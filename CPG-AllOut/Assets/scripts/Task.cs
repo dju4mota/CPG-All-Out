@@ -20,7 +20,7 @@ public class Task : MonoBehaviour
     public string descricao;
     public float tempoMax;
     public float tempo;
-    private GameObject notificacao;
+    public GameObject notificacao;
     
 
     public void Inicia()
@@ -35,10 +35,13 @@ public class Task : MonoBehaviour
         tempo -= Time.deltaTime;
         if (tempo <= 0)
         {
+            player.isTasking = false;
             taskAtiva = false;
             Destroy(PopUp);
             Destroy(notificacao);
             gameObject.SetActive(false);
+            GameManager.i.pontuacao(-1);
+            GameManager.i.totalTasksAtivas--;
         }
     }
     
