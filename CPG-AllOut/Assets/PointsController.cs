@@ -1,11 +1,13 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PointsController : MonoBehaviour
 {
 
     public Image image; // Assign in Inspector
+    public TMP_Text pointText;
     public float duration = 2f; // Duration in seconds
     public float moveDistance = 100f; // Pixels to move up
 
@@ -19,9 +21,14 @@ public class PointsController : MonoBehaviour
             canvasGroup = image.gameObject.AddComponent<CanvasGroup>();
         }
 
+       
+    }
+    public void ShowPoints(int p)
+    {
+        pointText.text = $"+ {p}";
         StartCoroutine(FadeUpAndOut(duration, moveDistance));
     }
-    
+
     IEnumerator FadeUpAndOut(float time, float distance)
     {
         RectTransform rect = image.GetComponent<RectTransform>();
@@ -47,5 +54,6 @@ public class PointsController : MonoBehaviour
         // Ensure final state
         rect.anchoredPosition = endPos;
         canvasGroup.alpha = 0f;
+        rect.anchoredPosition = startPos;
     }
 }

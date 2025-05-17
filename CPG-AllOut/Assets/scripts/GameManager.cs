@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 public class GameManager : MonoBehaviour
 {
     public static GameManager i;
+    public PointsController pointsController;
     public Task[] tasks;
     public int totalTasks;
     public int totalTasksAtivas;
@@ -22,19 +23,20 @@ public class GameManager : MonoBehaviour
     public int dinheiros; 
     public TMP_Text textoPontos;
     public TMP_Text textoTimer;
-    
+
     void Start()
     {
-  /*      if (i == null)
-        {
-            i = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else if (i != this)
-        {
-            Destroy(gameObject);
-        }*/
+        /*      if (i == null)
+              {
+                  i = this;
+                  DontDestroyOnLoad(gameObject);
+              }
+              else if (i != this)
+              {
+                  Destroy(gameObject);
+              }*/
         i = this;
+        pointsController = GetComponent<PointsController>();
     }
     
     void Update()
@@ -88,8 +90,9 @@ public class GameManager : MonoBehaviour
     public void pontuacao(int ponto)
     {
         pontos += ponto;
+        pointsController.ShowPoints(ponto);
         textoPontos.text = "pontos: " + pontos;
-        if (ponto == 1)
+        if (ponto > 0f)
         {
             tarefasFeitas++;
         }
