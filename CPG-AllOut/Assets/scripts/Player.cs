@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Rigidbody2D rb;
     private Vector2 moveDirection;
+    public bool isTasking;
+    //public bool freeMovement;
     
     void Start()
     {        
@@ -20,7 +22,11 @@ public class Player : MonoBehaviour
 
         moveDirection = new Vector2(horizontal, vertical);
     }
+    
     private void FixedUpdate(){
+        if(isTasking)
+            return;
+        
         Vector3 movePosition = (speed * Time.fixedDeltaTime * moveDirection.normalized) + rb.position;
         rb.MovePosition(movePosition);
         
