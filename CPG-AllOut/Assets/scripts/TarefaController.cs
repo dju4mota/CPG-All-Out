@@ -17,7 +17,7 @@ public class TarefaController : MonoBehaviour
 
     private void Start()
     {
-
+        nome.color = Color.black;
     }
 
     // Update is called once per frame
@@ -49,6 +49,8 @@ public class TarefaController : MonoBehaviour
         bgImage.color = Color.green;
         circleImage.type = Image.Type.Simple;
         circleImage.sprite = successSprite;
+        circleImage.color = Color.white;
+        nome.color = Color.white;
         StartCoroutine(ScaleImageUp(0.25f));
         yield return new WaitForSeconds(0.25f);
         Destroy(gameObject);
@@ -59,6 +61,8 @@ public class TarefaController : MonoBehaviour
         bgImage.color = Color.red;
         circleImage.type = Image.Type.Simple;
         circleImage.sprite = failSprite;
+        circleImage.color = Color.white;
+        nome.color = Color.white;
         StartCoroutine(ScaleImageUp(0.25f));
         yield return new WaitForSeconds(0.35f);
         Destroy(gameObject);
