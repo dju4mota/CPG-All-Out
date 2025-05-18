@@ -2097,7 +2097,7 @@ MonoBehaviour:
   pisca: 0
   _audio: {fileID: 741722492}
   _audioErro: {fileID: 1581736841}
-  clip: {fileID: 8300000, guid: 751bf16098488234bba8e94688db4738, type: 3}
+  clip: {fileID: 8300000, guid: 9d0808af77a959e4ca9c94508f53c202, type: 3}
   dinheiro: -35
 --- !u!58 &1084461380
 CircleCollider2D:
