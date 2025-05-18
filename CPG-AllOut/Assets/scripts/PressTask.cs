@@ -91,11 +91,13 @@ public class PressTask : MonoBehaviour
 
         if (image.fillAmount >= 1)
         {
+            task._audio.clip = task.clip;
+            task._audio.Play();
             player.isTasking = false;
             task.taskAtiva = false;
             gameManager.totalTasksAtivas--;
             task.CompleteTask();
-            Destroy(task.notificacao);
+            task.notificacao.GetComponent<TarefaController>().KillTask(true);
             task.gameObject.SetActive(false);
             Destroy(gameObject);
 
@@ -119,11 +121,13 @@ public class PressTask : MonoBehaviour
 
         if (image.fillAmount >= 1)
         {
+            task._audio.clip = task.clip;
+            task._audio.Play();
             player.isTasking = false;
             task.taskAtiva = false;
             gameManager.totalTasksAtivas--;
             task.CompleteTask();
-            Destroy(task.notificacao);
+            task.notificacao.GetComponent<TarefaController>().KillTask(true);
             task.gameObject.SetActive(false);
             Destroy(gameObject);
 

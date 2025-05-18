@@ -23,7 +23,7 @@ public class End : MonoBehaviour
 
     private static void StartNewGame()
     {
-        SceneManager.LoadScene("Dju");
+        SceneManager.LoadScene("Felipe");
     }
 
     private static void Menu()

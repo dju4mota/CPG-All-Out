@@ -24,6 +24,8 @@ public class Task : MonoBehaviour
     public float tempo;
     public GameObject notificacao;
     public bool pisca = false;
+    public AudioSource _audio;
+    public AudioClip clip;
 
     public void Start()
     {
@@ -33,6 +35,7 @@ public class Task : MonoBehaviour
 
     public void Inicia()
     {
+        tempoMax = Random.Range(1, 3);
         spriteRenderer = GetComponent<SpriteRenderer>();
         tempo = tempoMax;
         notificacao = HudController.i.CreateTask(nome, descricao, tempo);
@@ -49,7 +52,8 @@ public class Task : MonoBehaviour
             player.isTasking = false;
             taskAtiva = false;
             Destroy(PopUp);
-            Destroy(notificacao);
+            //Destroy(notificacao);
+            notificacao.GetComponent<TarefaController>().KillTask(false);
             GameManager.i.totalTasksAtivas--;
             gameObject.SetActive(false);
         }
@@ -65,14 +69,21 @@ public class Task : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Morgana") && PopUp == null)
+        if (other.CompareTag("Morgana"))
         {
-            PopUp = Instantiate(TaskType, TaskManager, false);
-            PopUp.GetComponent<PressTask>().task = this;
-            PopUp.GetComponent<PressTask>().key = Random.Range(0, 4);
-            Debug.Log(PopUp.GetComponent<PressTask>().isQTA = Random.Range(0, 2) == 1);
-            PopUp.GetComponent<PressTask>().SetUp();
-            isBeenDone = true;
+            if (PopUp == null)
+            {
+                PopUp = Instantiate(TaskType, TaskManager, false);
+                PopUp.GetComponent<PressTask>().task = this;
+                PopUp.GetComponent<PressTask>().key = Random.Range(0, 4);
+                Debug.Log(PopUp.GetComponent<PressTask>().isQTA = Random.Range(0, 2) == 1);
+                PopUp.GetComponent<PressTask>().SetUp();
+                isBeenDone = true;
+            }
+            else
+            {
+                PopUp.SetActive(true);
+            }
         }
     }
 
@@ -81,7 +92,7 @@ public class Task : MonoBehaviour
         if (other.CompareTag("Morgana"))
         {
             isBeenDone = false;
-            Destroy(PopUp);
+            PopUp.SetActive(false);
         }
     }
 
