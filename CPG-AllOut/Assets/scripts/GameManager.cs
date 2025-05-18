@@ -23,9 +23,11 @@ public class GameManager : MonoBehaviour
     public int dinheiros; 
     //public TMP_Text textoPontos;
     public TMP_Text textoTimer;
+    public float tempoOffSetMenu;
 
     void Start()
     {
+        tempoOffSetMenu = Time.time;
         /*      if (i == null)
               {
                   i = this;
@@ -41,16 +43,16 @@ public class GameManager : MonoBehaviour
     
     void Update()
     {
-        tempoTotal = Time.time;
+        tempoTotal = Time.time - tempoOffSetMenu;
         textoTimer.text = (duracaoTotal - tempoTotal).ToString("0.0");
-        tempoSemTask = Time.time - tempoUltimaTask;
+        tempoSemTask = Time.time - tempoUltimaTask - tempoOffSetMenu;
         if (tempoTotal >= duracaoTotal)
         {
             EndGame();
         }
         if (tempoSemTask > tempoEntreTasks)
         {
-            tempoUltimaTask = Time.time;
+            tempoUltimaTask = Time.time - tempoOffSetMenu;
             tempoSemTask = 0;
             sorteiaTask();
          /*   switch (totalTasks) {
