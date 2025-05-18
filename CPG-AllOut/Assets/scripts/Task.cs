@@ -33,6 +33,7 @@ public class Task : MonoBehaviour
 
     public void Inicia()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         tempo = tempoMax;
         notificacao = HudController.i.CreateTask(nome, descricao, tempo);
         taskAtiva = true;
@@ -64,12 +65,13 @@ public class Task : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Morgana"))
+        if (other.CompareTag("Morgana") && PopUp == null)
         {
             PopUp = Instantiate(TaskType, TaskManager, false);
             PopUp.GetComponent<PressTask>().task = this;
             PopUp.GetComponent<PressTask>().key = Random.Range(0, 4);
-
+            Debug.Log(PopUp.GetComponent<PressTask>().isQTA = Random.Range(0, 2) == 1);
+            PopUp.GetComponent<PressTask>().SetUp();
             isBeenDone = true;
         }
     }
