@@ -21,7 +21,7 @@ public class StartMenu : MonoBehaviour
 
     private static void StartNewGame()
     {
-        SceneManager.LoadScene("Felipe");
+        SceneManager.LoadScene("Cutscene");
     }
 
     private static void Quit()
