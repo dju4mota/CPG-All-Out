@@ -4,7 +4,10 @@ using UnityEngine.UI;
 using TMPro;
 public class PressTask : MonoBehaviour
 {
-    public Image circleImage; 
+    public Sprite Circle;
+    public Sprite Square;
+    public Image image;
+    public Image imageButton;
     public float fillSpeed;
     public Player player;
     public GameManager gameManager;
@@ -12,13 +15,14 @@ public class PressTask : MonoBehaviour
     public int key;
     public TMP_Text keytext;
     public KeyCode keyCode;
+    public bool isQTA;
     Vector3 offset = new(0f, 1f, 0);
 
     private void Start()
     {
         player = FindFirstObjectByType<Player>();
         gameManager = FindFirstObjectByType<GameManager>();
-        circleImage.rectTransform.position = Camera.main.WorldToScreenPoint(task.transform.position + offset);
+        image.rectTransform.position = Camera.main.WorldToScreenPoint(task.transform.position + offset);
         switch (key)
         {
             case 0:
@@ -26,36 +30,94 @@ public class PressTask : MonoBehaviour
                 keytext.text = "H";
                 break;
             case 1:
-                keyCode = KeyCode.I;
-                keytext.text = "I";
-                break;
-            case 2:
                 keyCode = KeyCode.J;
                 keytext.text = "J";
                 break;
-            default:
+            case 2:
                 keyCode = KeyCode.K;
                 keytext.text = "K";
                 break;
+            default:
+                keyCode = KeyCode.L;
+                keytext.text = "L";
+                break;
+        }
+
+    }
+
+    public void SetUp()
+    {
+        Debug.Log(isQTA);
+        if (isQTA)
+        {
+            image.sprite = imageButton.sprite = Square;
+            image.color = Color.red;
+            image.fillMethod = Image.FillMethod.Vertical;
+        }
+        else
+        {
+            image.sprite = imageButton.sprite = Circle;
+            image.color = Color.blue;
+            image.fillMethod = Image.FillMethod.Radial360;
         }
     }
 
     void Update()
     {
-        if(Input.GetKey(keyCode))
+        if (isQTA)
         {
-            player.isTasking = true;
-            Debug.Log("subingo");
-            circleImage.fillAmount += fillSpeed * Time.deltaTime;
-            circleImage.fillAmount = Mathf.Clamp01(circleImage.fillAmount);
+            QTALogic();
         }
         else
         {
-            circleImage.fillAmount -= fillSpeed * Time.deltaTime;
-            circleImage.fillAmount = Mathf.Clamp01(circleImage.fillAmount);
+            HoldLogic();
+        }
+    }
+
+    void QTALogic()
+    {
+        if (Input.GetKeyDown(keyCode))
+        {
+            player.isTasking = true;
+            Debug.Log("subingo");
+            image.fillAmount += 0.2f;
+            image.fillAmount = Mathf.Clamp01(image.fillAmount);
+        }
+        else
+        {
+            image.fillAmount -= fillSpeed * Time.deltaTime;
+            image.fillAmount = Mathf.Clamp01(image.fillAmount);
         }
 
-        if (circleImage.fillAmount >= 1)
+        if (image.fillAmount >= 1)
+        {
+            player.isTasking = false;
+            task.taskAtiva = false;
+            gameManager.totalTasksAtivas--;
+            task.CompleteTask();
+            Destroy(task.notificacao);
+            task.gameObject.SetActive(false);
+            Destroy(gameObject);
+
+        }
+    }
+
+    void HoldLogic()
+    {
+        if (Input.GetKey(keyCode))
+        {
+            player.isTasking = true;
+            Debug.Log("subingo");
+            image.fillAmount += fillSpeed * Time.deltaTime;
+            image.fillAmount = Mathf.Clamp01(image.fillAmount);
+        }
+        else
+        {
+            image.fillAmount -= fillSpeed * Time.deltaTime;
+            image.fillAmount = Mathf.Clamp01(image.fillAmount);
+        }
+
+        if (image.fillAmount >= 1)
         {
             player.isTasking = false;
             task.taskAtiva = false;
