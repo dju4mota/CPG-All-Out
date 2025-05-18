@@ -540,8 +540,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bgImage: {fileID: 64385165423448328}
   circleImage: {fileID: 5811255837246852191}
-  failSprite: {fileID: 21300000, guid: 9390f16c3b707394fb3666a359567a05, type: 3}
-  successSprite: {fileID: 21300000, guid: 9390f16c3b707394fb3666a359567a05, type: 3}
+  failSprite: {fileID: -4082231827434436436, guid: f2beda432eb918c4c8312581efb476e6, type: 3}
+  successSprite: {fileID: -6734455826434115371, guid: c44c24333a9a08248b10bb04b4018897, type: 3}
   nome: {fileID: 5602280322322802054}
   descricao: {fileID: 1600186388832939807}
   velocidade: 0

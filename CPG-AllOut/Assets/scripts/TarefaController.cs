@@ -32,21 +32,35 @@ public class TarefaController : MonoBehaviour
         }
     }
 
+    public void KillTask(bool sucess)
+    {
+        if (sucess)
+        {
+            StartCoroutine(Complete());
+        }
+        else
+        {
+             StartCoroutine(Fail());
+        }
+    }
+
     IEnumerator Complete()
     {
         bgImage.color = Color.green;
+        circleImage.type = Image.Type.Simple;
+        circleImage.sprite = successSprite;
+        StartCoroutine(ScaleImageUp(0.25f));
         yield return new WaitForSeconds(0.25f);
         Destroy(gameObject);
     }
 
     IEnumerator Fail()
     {
-        Debug.Log("Fail");
         bgImage.color = Color.red;
         circleImage.type = Image.Type.Simple;
         circleImage.sprite = failSprite;
-        StartCoroutine(ScaleImageUp(0.2f));
-        yield return new WaitForSeconds(0.25f);
+        StartCoroutine(ScaleImageUp(0.25f));
+        yield return new WaitForSeconds(0.35f);
         Destroy(gameObject);
     }
     

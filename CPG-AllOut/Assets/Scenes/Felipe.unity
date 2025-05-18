@@ -172,7 +172,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &248573031
 Transform:
   m_ObjectHideFlags: 0
@@ -212,6 +212,8 @@ MonoBehaviour:
   tempo: 0
   notificacao: {fileID: 0}
   pisca: 0
+  _audio: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!58 &248573033
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -898,7 +900,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &624034313
 Transform:
   m_ObjectHideFlags: 0
@@ -938,6 +940,8 @@ MonoBehaviour:
   tempo: 0
   notificacao: {fileID: 0}
   pisca: 0
+  _audio: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!58 &624034315
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1423,7 +1427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1084461378
 Transform:
   m_ObjectHideFlags: 0
@@ -1463,6 +1467,8 @@ MonoBehaviour:
   tempo: 0
   notificacao: {fileID: 0}
   pisca: 0
+  _audio: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!58 &1084461380
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1950,7 +1956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1315065299
 Transform:
   m_ObjectHideFlags: 0
@@ -1990,6 +1996,8 @@ MonoBehaviour:
   tempo: 0
   notificacao: {fileID: 0}
   pisca: 0
+  _audio: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!58 &1315065301
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2364,7 +2372,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1345770986
 Transform:
   m_ObjectHideFlags: 0
@@ -2404,6 +2412,8 @@ MonoBehaviour:
   tempo: 0
   notificacao: {fileID: 0}
   pisca: 0
+  _audio: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!58 &1345770988
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2695,7 +2705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1372184694
 Transform:
   m_ObjectHideFlags: 0
@@ -2735,6 +2745,8 @@ MonoBehaviour:
   tempo: 0
   notificacao: {fileID: 0}
   pisca: 0
+  _audio: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!58 &1372184696
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3162,7 +3174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1520650787
 Transform:
   m_ObjectHideFlags: 0
@@ -3202,6 +3214,8 @@ MonoBehaviour:
   tempo: 0
   notificacao: {fileID: 0}
   pisca: 0
+  _audio: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!58 &1520650789
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3629,7 +3643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1759182056
 Transform:
   m_ObjectHideFlags: 0
@@ -3669,6 +3683,8 @@ MonoBehaviour:
   tempo: 0
   notificacao: {fileID: 0}
   pisca: 0
+  _audio: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!58 &1759182058
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3778,7 +3794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1874075965
 Transform:
   m_ObjectHideFlags: 0
@@ -3818,6 +3834,8 @@ MonoBehaviour:
   tempo: 0
   notificacao: {fileID: 0}
   pisca: 0
+  _audio: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!58 &1874075967
 CircleCollider2D:
   m_ObjectHideFlags: 0
