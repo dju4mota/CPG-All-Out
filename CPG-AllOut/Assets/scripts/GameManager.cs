@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     //public TMP_Text textoPontos;
     public TMP_Text textoTimer;
     public float tempoOffSetMenu;
+    
+    public AudioSource _audioSpawn;
 
     void Start()
     {

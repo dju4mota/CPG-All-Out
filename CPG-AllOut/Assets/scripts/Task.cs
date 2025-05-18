@@ -25,6 +25,7 @@ public class Task : MonoBehaviour
     public GameObject notificacao;
     public bool pisca = false;
     public AudioSource _audio;
+    public AudioSource _audioErro;
     public AudioClip clip;
 
     public void Start()
@@ -56,6 +57,7 @@ public class Task : MonoBehaviour
             notificacao.GetComponent<TarefaController>().KillTask(false);
             GameManager.i.totalTasksAtivas--;
             gameObject.SetActive(false);
+            _audioErro.Play();
         }
         
         if (gameObject != null)
