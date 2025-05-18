@@ -792,9 +792,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2.0566378, y: -1.3371122}
-  - {x: -2.700513, y: 1.2665621}
-  - {x: 5.090084, y: 1.337112}
+  - {x: -3.5415401, y: -1.2927865}
+  - {x: -4.274068, y: 1.8427931}
+  - {x: 4.779806, y: 1.824692}
   - {x: 5.8684044, y: -1.1974137}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
@@ -2705,7 +2705,7 @@ MonoBehaviour:
   pisca: 0
   _audio: {fileID: 741722492}
   _audioErro: {fileID: 1581736841}
-  clip: {fileID: 8300000, guid: 05a384813fc574945895908392a1fafd, type: 3}
+  clip: {fileID: 8300000, guid: 43296840c225558449b09f3ccabf15e6, type: 3}
   dinheiro: 0
 --- !u!58 &1315065301
 CircleCollider2D:
@@ -3854,7 +3854,7 @@ MonoBehaviour:
   pisca: 0
   _audio: {fileID: 741722492}
   _audioErro: {fileID: 1581736841}
-  clip: {fileID: 8300000, guid: 9b74dbffbaedb7346932163ed64e5b82, type: 3}
+  clip: {fileID: 8300000, guid: 46dabdf375cfe3d4f8646f7733e6bc08, type: 3}
   dinheiro: 50
 --- !u!58 &1520650789
 CircleCollider2D:
