@@ -52,8 +52,8 @@ public class GameManager : MonoBehaviour
         {
             tempoUltimaTask = Time.time;
             tempoSemTask = 0;
-
-            switch (totalTasks) {
+            sorteiaTask();
+         /*   switch (totalTasks) {
                 case 0:
                 case 1:
                     sorteiaTask();
@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
                     sorteiaTask();
                     sorteiaTask();
                     break;
-            }
+            }*/
             
         }
     }
@@ -100,6 +100,20 @@ public class GameManager : MonoBehaviour
 
     void sorteiaTask() // sorteio ?? 
     {
+
+        switch (totalTasks)
+        {
+            case 4:
+                tempoEntreTasks = 4;
+                break;
+            case 7:
+                tempoEntreTasks = 3;
+                break;
+            case 12:
+                tempoEntreTasks = 2.5f;
+                break;
+        }
+
         for (int i = 0; i < tasks.Length; i++)
         {
             int index = Random.Range(0, tasks.Length);
