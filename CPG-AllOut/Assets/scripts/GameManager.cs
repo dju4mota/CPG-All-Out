@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     public int pontos;
     public int dinheiros; 
-    public TMP_Text textoPontos;
+    //public TMP_Text textoPontos;
     public TMP_Text textoTimer;
 
     void Start()
@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour
     {
         pontos += ponto;
         pointsController.ShowPoints(ponto);
-        textoPontos.text = "pontos: " + pontos;
+        //textoPontos.text = "pontos: " + pontos;
         if (ponto > 0f)
         {
             tarefasFeitas++;
