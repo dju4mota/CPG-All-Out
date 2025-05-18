@@ -24,7 +24,7 @@ public class Task : MonoBehaviour
     public float tempo;
     public GameObject notificacao;
     public bool pisca = false;
-    public AudioSource audio;
+    public AudioSource _audio;
     public AudioClip clip;
 
     public void Start()
@@ -35,8 +35,7 @@ public class Task : MonoBehaviour
 
     public void Inicia()
     {
-        //audio.Stop();
-        tempoMax = Random.Range(8, 16);
+        tempoMax = Random.Range(1, 3);
         spriteRenderer = GetComponent<SpriteRenderer>();
         tempo = tempoMax;
         notificacao = HudController.i.CreateTask(nome, descricao, tempo);
@@ -53,7 +52,8 @@ public class Task : MonoBehaviour
             player.isTasking = false;
             taskAtiva = false;
             Destroy(PopUp);
-            Destroy(notificacao);
+            //Destroy(notificacao);
+            notificacao.GetComponent<TarefaController>().KillTask(false);
             GameManager.i.totalTasksAtivas--;
             gameObject.SetActive(false);
         }
