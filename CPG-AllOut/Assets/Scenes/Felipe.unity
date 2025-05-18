@@ -1268,7 +1268,7 @@ MonoBehaviour:
   TaskManager: {fileID: 24932204}
   isBeenDone: 0
   nome: Regar Planta
-  descricao: "Tente n\xE3o mat\xE1-la igual seus sonhos"
+  descricao: Ela bebe mais agua que voce
   tempoMax: 6
   tempo: 0
   notificacao: {fileID: 0}
@@ -4769,7 +4769,7 @@ MonoBehaviour:
   TaskManager: {fileID: 24932204}
   isBeenDone: 0
   nome: Esquentar Comida
-  descricao: Hot Pocket!
+  descricao: Cuidado com o prato quente
   tempoMax: 6
   tempo: 0
   notificacao: {fileID: 0}

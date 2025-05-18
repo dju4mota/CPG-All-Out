@@ -108,13 +108,13 @@ public class GameManager : MonoBehaviour
         switch (totalTasks)
         {
             case 4:
-                tempoEntreTasks = 2;
+                tempoEntreTasks = 4;
                 break;
             case 7:
-                tempoEntreTasks = 1.5f;
+                tempoEntreTasks = 2f;
                 break;
             case 12:
-                tempoEntreTasks = 1;
+                tempoEntreTasks = 1.5f;
                 break;
         }
 

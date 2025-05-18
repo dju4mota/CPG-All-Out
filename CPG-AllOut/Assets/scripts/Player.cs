@@ -3,7 +3,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    public float speed = 5f;
+    public float speed = 12f;
     private float speedcafe;
     public GameObject ghost;
     [SerializeField]

@@ -9,6 +9,7 @@ public class PressTask : MonoBehaviour
     public Image image;
     public Image imageButton;
     public float fillSpeed;
+    private float multiplierCafe = 1f;
     public Player player;
     public GameManager gameManager;
     public Task task;
@@ -72,6 +73,15 @@ public class PressTask : MonoBehaviour
         {
             HoldLogic();
         }
+
+        if (player.cafeinado)
+        {
+            multiplierCafe = 1.5f;
+        }
+        else
+        {
+            multiplierCafe = 1f;
+        }
     }
 
     void QTALogic()
@@ -80,7 +90,7 @@ public class PressTask : MonoBehaviour
         {
             player.isTasking = true;
             Debug.Log("subingo");
-            image.fillAmount += 0.2f;
+            image.fillAmount += 0.2f * multiplierCafe;
             image.fillAmount = Mathf.Clamp01(image.fillAmount);
         }
         else
@@ -110,7 +120,7 @@ public class PressTask : MonoBehaviour
         {
             player.isTasking = true;
             Debug.Log("subingo");
-            image.fillAmount += fillSpeed * Time.deltaTime;
+            image.fillAmount += fillSpeed * multiplierCafe * Time.deltaTime;
             image.fillAmount = Mathf.Clamp01(image.fillAmount);
         }
         else

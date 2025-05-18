@@ -15,8 +15,9 @@ public class CoffeeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((int)GameManager.i.tempoTotal == 15)
+        if (GameManager.i.tarefasFeitas == 1 || GameManager.i.tarefasFeitas == 7 || GameManager.i.tarefasFeitas == 14)
         {
+            Debug.Log(GameManager.i.tarefasFeitas);
             CafeQuentinho();
         }
         if (startTimer)

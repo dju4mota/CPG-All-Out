@@ -21,7 +21,9 @@ public class AnimationController : MonoBehaviour
         currentAnimation = newAnimation;
     }
 
-     public Animator Animator{
-        get {return animator;}
+
+     public Animator Animator
+    {
+        get { return animator; }
     }
 }

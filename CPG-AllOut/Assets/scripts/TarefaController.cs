@@ -52,7 +52,7 @@ public class TarefaController : MonoBehaviour
         circleImage.color = Color.white;
         nome.color = Color.white;
         StartCoroutine(ScaleImageUp(0.25f));
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.4f);
         Destroy(gameObject);
     }
 
@@ -64,7 +64,7 @@ public class TarefaController : MonoBehaviour
         circleImage.color = Color.white;
         nome.color = Color.white;
         StartCoroutine(ScaleImageUp(0.25f));
-        yield return new WaitForSeconds(0.35f);
+        yield return new WaitForSeconds(0.4f);
         Destroy(gameObject);
     }
     

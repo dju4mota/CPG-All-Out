@@ -25,7 +25,6 @@ public class Task : MonoBehaviour
     public GameObject notificacao;
     public bool pisca = false;
     public AudioSource _audio;
-    public AudioSource _audioErro;
     public AudioClip clip;
 
     public void Start()
@@ -36,7 +35,7 @@ public class Task : MonoBehaviour
 
     public void Inicia()
     {
-        tempoMax = Random.Range(1, 3);
+        tempoMax = Random.Range(8, 16);
         spriteRenderer = GetComponent<SpriteRenderer>();
         tempo = tempoMax;
         notificacao = HudController.i.CreateTask(nome, descricao, tempo);
@@ -57,7 +56,6 @@ public class Task : MonoBehaviour
             notificacao.GetComponent<TarefaController>().KillTask(false);
             GameManager.i.totalTasksAtivas--;
             gameObject.SetActive(false);
-            _audioErro.Play();
         }
         
         if (gameObject != null)
