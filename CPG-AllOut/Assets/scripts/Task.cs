@@ -43,6 +43,10 @@ public class Task : MonoBehaviour
         taskAtiva = true;
         pisca = false;
         spriteRenderer.enabled = true;
+        if (dinheiro < 0)
+        {
+            Debug.Log("MOTO!!");
+        }
     }
 
     private void Update()

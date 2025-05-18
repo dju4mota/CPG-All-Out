@@ -300,8 +300,8 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
-  _audioErro: {fileID: 1581736841}
-  clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  clip: {fileID: 8300000, guid: 43aeab4204f0a50458f6603f883b33c2, type: 3}
+  dinheiro: 350
 --- !u!58 &248573033
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -651,7 +651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &287604753
 Transform:
   m_ObjectHideFlags: 0
@@ -1274,8 +1274,8 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
-  _audioErro: {fileID: 1581736841}
-  clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  clip: {fileID: 8300000, guid: 8b0ec24a330842d4b91e5dcbdeaf8502, type: 3}
+  dinheiro: 0
 --- !u!58 &624034315
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2094,8 +2094,8 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
-  _audioErro: {fileID: 1581736841}
-  clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  clip: {fileID: 8300000, guid: 751bf16098488234bba8e94688db4738, type: 3}
+  dinheiro: -25
 --- !u!58 &1084461380
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2563,7 +2563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 459e6fad6913f614a94793c97c6144bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 12
   ghost: {fileID: 949371064}
   rb: {fileID: 1283455847}
   moveDirection: {x: 0, y: 0}
@@ -2621,6 +2621,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96275624ab8195488bcf0db66d4d846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idleSprites:
+  - {fileID: 659797372610145418, guid: 28fbeeca7b8f7d14f9a8206213115e03, type: 3}
+  - {fileID: 5546671543968653177, guid: 28fbeeca7b8f7d14f9a8206213115e03, type: 3}
+  - {fileID: 1026407549584056185, guid: 28fbeeca7b8f7d14f9a8206213115e03, type: 3}
+  - {fileID: 3929453942698372637, guid: 28fbeeca7b8f7d14f9a8206213115e03, type: 3}
+  - {fileID: -698895534, guid: 28fbeeca7b8f7d14f9a8206213115e03, type: 3}
+  - {fileID: -8541409857757731410, guid: 28fbeeca7b8f7d14f9a8206213115e03, type: 3}
+  - {fileID: 8058879627694289943, guid: 28fbeeca7b8f7d14f9a8206213115e03, type: 3}
+  - {fileID: -5521112282276127969, guid: 28fbeeca7b8f7d14f9a8206213115e03, type: 3}
 --- !u!114 &1283455853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2692,8 +2701,8 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
-  _audioErro: {fileID: 1581736841}
-  clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  clip: {fileID: 8300000, guid: 05a384813fc574945895908392a1fafd, type: 3}
+  dinheiro: 0
 --- !u!58 &1315065301
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2980,8 +2989,8 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
-  _audioErro: {fileID: 1581736841}
-  clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  clip: {fileID: 8300000, guid: f5fc539dedbc58f4b889805ed3c23927, type: 3}
+  dinheiro: -200
 --- !u!58 &1345770988
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3315,8 +3324,8 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
-  _audioErro: {fileID: 1581736841}
-  clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  clip: {fileID: 8300000, guid: 72fa2799ae490d64ab72eef81e8032fe, type: 3}
+  dinheiro: 0
 --- !u!58 &1372184696
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3891,8 +3900,8 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
-  _audioErro: {fileID: 1581736841}
-  clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  clip: {fileID: 8300000, guid: 9b74dbffbaedb7346932163ed64e5b82, type: 3}
+  dinheiro: 50
 --- !u!58 &1520650789
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4775,8 +4784,8 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
-  _audioErro: {fileID: 1581736841}
   clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  dinheiro: 0
 --- !u!58 &1759182058
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4944,7 +4953,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 7.5285363, y: 0.63159347}
+  m_Size: {x: 6.45, y: 0.63159347}
   m_EdgeRadius: 0
 --- !u!1 &1836587163
 GameObject:
@@ -5045,8 +5054,8 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
-  _audioErro: {fileID: 1581736841}
-  clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  clip: {fileID: 8300000, guid: 05a384813fc574945895908392a1fafd, type: 3}
+  dinheiro: 0
 --- !u!58 &1874075967
 CircleCollider2D:
   m_ObjectHideFlags: 0
