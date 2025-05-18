@@ -5,11 +5,15 @@ Este repositório contém o projeto desenvolvido para a **Competição de Progra
 ## Sobre a Competição
 A CPG é uma maratona de desenvolvimento de jogos promovida anualmente pelo Inatel, reunindo desenvolvedores, artistas e entusiastas para criar um jogo completo em um curto período de tempo.
 
-## Sobre o Jogo
 - Gênero do jogo
+    - Overcooked
 - Mecânicas principais
+    - Andar
+    - Interagir com objetos em cena até a interação sumir
 - Tema
+    - Daqui pra frente é só pra traz
 - Regras e objetivos
+    - Objetivo: Não deixar as tarefas expirarem e fazer todas
 - Screenshots e vídeos de gameplay
 
 ## Tecnologias Utilizadas
