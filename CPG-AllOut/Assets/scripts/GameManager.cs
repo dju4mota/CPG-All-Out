@@ -109,10 +109,10 @@ public class GameManager : MonoBehaviour
                 tempoEntreTasks = 2;
                 break;
             case 7:
-                tempoEntreTasks = 1;
+                tempoEntreTasks = 1.5f;
                 break;
             case 12:
-                tempoEntreTasks = 1.5f;
+                tempoEntreTasks = 1;
                 break;
         }
 
