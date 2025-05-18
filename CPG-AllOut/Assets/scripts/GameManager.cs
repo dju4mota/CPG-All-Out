@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("End");
     }
 
-    public void pontuacao(int ponto)
+    public void pontuacao(int ponto, int dinheiro)
     {
         pontos += ponto;
         pointsController.ShowPoints(ponto);
@@ -100,6 +100,8 @@ public class GameManager : MonoBehaviour
         {
             tarefasFeitas++;
         }
+
+        dinheiros += dinheiro;
     }
 
     void sorteiaTask() // sorteio ?? 
