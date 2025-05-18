@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public int dinheiros; 
     //public TMP_Text textoPontos;
     public TMP_Text textoTimer;
+    public TMP_Text textoDinheiro;
     public float tempoOffSetMenu;
     
     public AudioSource _audioSpawn;
@@ -96,12 +97,52 @@ public class GameManager : MonoBehaviour
         pontos += ponto;
         pointsController.ShowPoints(ponto);
         //textoPontos.text = "pontos: " + pontos;
+        textoDinheiro.text = "R$ " + dinheiros;
         if (ponto > 0f)
         {
             tarefasFeitas++;
         }
 
         dinheiros += dinheiro;
+        if (dinheiros >= -1)
+        {
+            ChangeVertexColor(new Color(201,250,131));
+        }
+        else
+        {
+            ChangeVertexColor(new Color(205,41,52));
+        }
+        
+    }
+    
+    void ChangeVertexColor(Color newColor)
+    {
+        textoDinheiro.ForceMeshUpdate(); // Garante que a malha esteja atualizada
+
+        TMP_TextInfo textInfo = textoDinheiro.textInfo;
+
+        for (int i = 0; i < textInfo.characterCount; i++)
+        {
+            if (!textInfo.characterInfo[i].isVisible)
+                continue;
+
+            int materialIndex = textInfo.characterInfo[i].materialReferenceIndex;
+            int vertexIndex = textInfo.characterInfo[i].vertexIndex;
+
+            Color32[] vertexColors = textInfo.meshInfo[materialIndex].colors32;
+
+            vertexColors[vertexIndex + 0] = newColor;
+            vertexColors[vertexIndex + 1] = newColor;
+            vertexColors[vertexIndex + 2] = newColor;
+            vertexColors[vertexIndex + 3] = newColor;
+        }
+
+        // Atualiza a malha com as novas cores
+        for (int i = 0; i < textInfo.meshInfo.Length; i++)
+        {
+            textInfo.meshInfo[i].mesh.colors32 = textInfo.meshInfo[i].colors32;
+            textoDinheiro.UpdateGeometry(textInfo.meshInfo[i].mesh, i);
+        }
     }
 
     void sorteiaTask() // sorteio ?? 
@@ -113,10 +154,10 @@ public class GameManager : MonoBehaviour
                 tempoEntreTasks = 4;
                 break;
             case 7:
-                tempoEntreTasks = 2f;
+                tempoEntreTasks = 3f;
                 break;
             case 12:
-                tempoEntreTasks = 1.5f;
+                tempoEntreTasks = 2f;
                 break;
         }
 

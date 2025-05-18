@@ -1276,7 +1276,7 @@ MonoBehaviour:
   pisca: 0
   _audio: {fileID: 741722492}
   _audioErro: {fileID: 1581736841}
-  clip: {fileID: 8300000, guid: 8b0ec24a330842d4b91e5dcbdeaf8502, type: 3}
+  clip: {fileID: 8300000, guid: bc804dbe0ca284540b88f11a1bb366e2, type: 3}
   dinheiro: 0
 --- !u!58 &624034315
 CircleCollider2D:
@@ -2098,7 +2098,7 @@ MonoBehaviour:
   _audio: {fileID: 741722492}
   _audioErro: {fileID: 1581736841}
   clip: {fileID: 8300000, guid: 751bf16098488234bba8e94688db4738, type: 3}
-  dinheiro: -25
+  dinheiro: -35
 --- !u!58 &1084461380
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3132,14 +3132,15 @@ MonoBehaviour:
   totalTasks: 0
   totalTasksAtivas: 0
   tarefasFeitas: 0
-  duracaoTotal: 1
-  tempoEntreTasks: 3
+  duracaoTotal: 90
+  tempoEntreTasks: 4
   tempoTotal: 0
   tempoSemTask: 0
   tempoUltimaTask: 0
   pontos: 0
-  dinheiros: 0
+  dinheiros: 150
   textoTimer: {fileID: 1336915963}
+  textoDinheiro: {fileID: 1989100933}
   tempoOffSetMenu: 0
   _audioSpawn: {fileID: 1712254997}
 --- !u!4 &1351346428
@@ -5283,7 +5284,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: R$ 300
+  m_text: R$ 150
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5c04df4bd48d70247b827d4c7b862050, type: 2}
   m_sharedMaterial: {fileID: 2279279553507291024, guid: 5c04df4bd48d70247b827d4c7b862050, type: 2}
@@ -5293,7 +5294,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4286839497
-  m_fontColor: {r: 0.7889886, g: 0.9811321, b: 0.51370597, a: 1}
+  m_fontColor: {r: 0.7882353, g: 0.98039216, b: 0.5137255, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

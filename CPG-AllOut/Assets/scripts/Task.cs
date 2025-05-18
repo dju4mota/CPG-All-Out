@@ -37,7 +37,7 @@ public class Task : MonoBehaviour
 
     public void Inicia()
     {
-        tempoMax = Random.Range(8, 16);
+        tempoMax = Random.Range(8, 14);
         spriteRenderer = GetComponent<SpriteRenderer>();
         tempo = tempoMax;
         notificacao = HudController.i.CreateTask(nome, descricao, tempo);
