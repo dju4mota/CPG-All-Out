@@ -62,7 +62,7 @@ public class End : MonoBehaviour
     IEnumerator MostrarTotal()
     {
         yield return new WaitForSecondsRealtime(0.5f);
-        total.text = "Total: " + ((int)GameData.i.tarefasFeitas + (int)GameData.i.dinheiros + (int)GameData.i.pontos);
+        total.text = ((int)GameData.i.tarefasFeitas + (int)GameData.i.dinheiros + (int)GameData.i.pontos).ToString();
         _audio.Play();
     }
 
