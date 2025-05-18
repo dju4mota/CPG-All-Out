@@ -5,22 +5,33 @@ public class CoffeeController : MonoBehaviour
     public GameObject cafePopUp;
     public Player player;
     public float timer;
+    private bool startTimer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        timer = 10f;
+        timer = 5f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.i.textoTimer.text == "10.0")
+        if ((int)GameManager.i.tempoTotal == 15)
         {
             CafeQuentinho();
         }
+        if (startTimer)
+        {
+            timer -= Time.deltaTime;
+        }
+        if (timer <= 0)
+        {
+            player.Descafeinado();
+            startTimer = false;
+            timer = 5f;
+        }
     }
 
-    void CafeQuentinho()
+    public void CafeQuentinho()
     {
         cafePopUp.SetActive(true);
     }
@@ -30,17 +41,13 @@ public class CoffeeController : MonoBehaviour
         if (other.CompareTag("Morgana") && cafePopUp.activeSelf)
         {
             Debug.Log("Cafe");
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space))
             {
+                Debug.Log("Ligou o cafe");
                 cafePopUp.SetActive(false);
                 player.Cafeinado();
-                StartTimer();
+                startTimer = true;
             }
         }
-    }
-
-    private void StartTimer()
-    {
-        
     }
 }

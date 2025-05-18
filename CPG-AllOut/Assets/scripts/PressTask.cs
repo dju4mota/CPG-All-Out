@@ -58,6 +58,7 @@ public class PressTask : MonoBehaviour
         if (circleImage.fillAmount >= 1)
         {
             player.isTasking = false;
+            task.taskAtiva = false;
             gameManager.totalTasksAtivas--;
             task.CompleteTask();
             Destroy(task.notificacao);

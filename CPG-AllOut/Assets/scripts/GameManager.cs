@@ -52,8 +52,8 @@ public class GameManager : MonoBehaviour
         {
             tempoUltimaTask = Time.time;
             tempoSemTask = 0;
-
-            switch (totalTasks) {
+            sorteiaTask();
+         /*   switch (totalTasks) {
                 case 0:
                 case 1:
                     sorteiaTask();
@@ -63,18 +63,18 @@ public class GameManager : MonoBehaviour
                     sorteiaTask();
                     break;
                 case 4:
+                case 5:
+                case 6:
+                case 7:
                     sorteiaTask();
                     sorteiaTask();
                     sorteiaTask();
                     break;
-                case 7: 
+                case >8: 
                     sorteiaTask();
                     sorteiaTask();
                     break;
-                case >7:
-                    sorteiaTask();
-                    break;
-            }
+            }*/
             
         }
     }
@@ -100,6 +100,20 @@ public class GameManager : MonoBehaviour
 
     void sorteiaTask() // sorteio ?? 
     {
+
+        switch (totalTasks)
+        {
+            case 4:
+                tempoEntreTasks = 4;
+                break;
+            case 7:
+                tempoEntreTasks = 3;
+                break;
+            case 12:
+                tempoEntreTasks = 2.5f;
+                break;
+        }
+
         for (int i = 0; i < tasks.Length; i++)
         {
             int index = Random.Range(0, tasks.Length);
@@ -110,7 +124,7 @@ public class GameManager : MonoBehaviour
                 tasks[index].Inicia();
                 totalTasksAtivas++;
                 totalTasks++;
-                break;
+                return;
             }
         }
     }

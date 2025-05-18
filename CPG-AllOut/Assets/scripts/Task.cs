@@ -23,6 +23,7 @@ public class Task : MonoBehaviour
     public float tempoMax;
     public float tempo;
     public GameObject notificacao;
+    public bool pisca = false;
 
     public void Start()
     {
@@ -35,6 +36,8 @@ public class Task : MonoBehaviour
         tempo = tempoMax;
         notificacao = HudController.i.CreateTask(nome, descricao, tempo);
         taskAtiva = true;
+        pisca = false;
+        spriteRenderer.enabled = true;
     }
 
     private void Update()
@@ -46,15 +49,15 @@ public class Task : MonoBehaviour
             taskAtiva = false;
             Destroy(PopUp);
             Destroy(notificacao);
-            gameObject.SetActive(false);
             GameManager.i.totalTasksAtivas--;
+            gameObject.SetActive(false);
         }
-
+        
         if (gameObject != null)
         {
             if (tempo < tempoMax / 3)
             {
-                StartCoroutine(Pisca(0.5f));
+                ComecaPiscar();        
             }
         }
     }
@@ -80,6 +83,13 @@ public class Task : MonoBehaviour
         }
     }
 
+    private void ComecaPiscar()
+    {
+        if(pisca)
+            return;
+        pisca = true;
+        StartCoroutine(Pisca(0.2f));
+    }
     IEnumerator Pisca(float temp)
     {
         yield return new WaitForSeconds(temp);
