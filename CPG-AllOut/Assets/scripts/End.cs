@@ -14,7 +14,7 @@ public class End : MonoBehaviour
     public TMP_Text erros;
     public TMP_Text total;
     //Game manager pra pegar as tarefas feitas
-
+    public AudioSource _audio;
 
 
     private void Start()
@@ -38,6 +38,7 @@ public class End : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(0.5f);
         pontos.text = (GameData.i.pontos).ToString();
+        _audio.Play();
         StartCoroutine("MostrarDinheiro");
     }
 
@@ -45,20 +46,14 @@ public class End : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(0.5f);
         dinheiro.text = (GameData.i.dinheiros).ToString();
+        _audio.Play();
         StartCoroutine("MostrarTarefas");
     }
     IEnumerator MostrarTarefas()
     {
         yield return new WaitForSecondsRealtime(0.5f);
         tarefas.text = (GameData.i.tarefasFeitas).ToString();
-        StartCoroutine("MostrarErros");
-    }
-
-    IEnumerator MostrarErros()
-    {
-        yield return new WaitForSecondsRealtime(0.5f);
-        int errosRestantes = Mathf.Max(0, GameData.i.totalTasks - GameData.i.tarefasFeitas);
-        erros.text = errosRestantes.ToString();
+        _audio.Play();
         StartCoroutine("MostrarTotal");
     }
 
@@ -67,7 +62,8 @@ public class End : MonoBehaviour
     IEnumerator MostrarTotal()
     {
         yield return new WaitForSecondsRealtime(0.5f);
-        total.text = "Total: " +( (int) GameData.i.tarefasFeitas + (int) GameData.i.dinheiros + (int) GameData.i.pontos);
+        total.text = ((int)GameData.i.tarefasFeitas + (int)GameData.i.dinheiros + (int)GameData.i.pontos).ToString();
+        _audio.Play();
     }
 
 }

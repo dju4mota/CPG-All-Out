@@ -25,6 +25,7 @@ public class Task : MonoBehaviour
     public GameObject notificacao;
     public bool pisca = false;
     public AudioSource _audio;
+    public AudioSource _audioErro;
     public AudioClip clip;
     public int dinheiro;
 
@@ -36,7 +37,7 @@ public class Task : MonoBehaviour
 
     public void Inicia()
     {
-        tempoMax = Random.Range(8, 16);
+        tempoMax = Random.Range(10, 16);
         spriteRenderer = GetComponent<SpriteRenderer>();
         tempo = tempoMax;
         notificacao = HudController.i.CreateTask(nome, descricao, tempo);
@@ -54,6 +55,7 @@ public class Task : MonoBehaviour
         tempo -= Time.deltaTime;
         if (tempo <= 0)
         {
+            _audioErro.Play();
             player.isTasking = false;
             taskAtiva = false;
             Destroy(PopUp);
