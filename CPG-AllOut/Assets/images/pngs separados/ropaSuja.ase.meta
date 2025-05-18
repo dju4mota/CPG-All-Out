@@ -124,7 +124,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: ropaSuja
     originalName: 
-    pivot: {x: -8.299999, y: -4.746479}
+    pivot: {x: 0.5300682, y: -0.17571428}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -132,9 +132,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 60
-      height: 71
-    spriteID: c23f0934b67e53f4a829c8d98fafecd9
+      width: 1613
+      height: 700
+    spriteID: ef94145a54136ed4fb2ae88a3df91229
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -156,11 +156,11 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 1458
-        y: 337
-        width: 60
-        height: 71
-      spriteId: c23f0934b67e53f4a829c8d98fafecd9
+        x: 105
+        y: 123
+        width: 1613
+        height: 700
+      spriteId: ef94145a54136ed4fb2ae88a3df91229
     linkedCells: []
     parentIndex: -1
   platformSettings:
