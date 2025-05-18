@@ -24,6 +24,8 @@ public class Task : MonoBehaviour
     public float tempo;
     public GameObject notificacao;
     public bool pisca = false;
+    public AudioSource audio;
+    public AudioClip clip;
 
     public void Start()
     {
@@ -33,6 +35,7 @@ public class Task : MonoBehaviour
 
     public void Inicia()
     {
+        //audio.Stop();
         tempoMax = Random.Range(8, 16);
         spriteRenderer = GetComponent<SpriteRenderer>();
         tempo = tempoMax;

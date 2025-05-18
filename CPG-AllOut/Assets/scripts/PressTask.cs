@@ -91,6 +91,8 @@ public class PressTask : MonoBehaviour
 
         if (image.fillAmount >= 1)
         {
+            task.audio.clip = task.clip;
+            task.audio.Play();
             player.isTasking = false;
             task.taskAtiva = false;
             gameManager.totalTasksAtivas--;
@@ -119,6 +121,8 @@ public class PressTask : MonoBehaviour
 
         if (image.fillAmount >= 1)
         {
+            task.audio.clip = task.clip;
+            task.audio.Play();
             player.isTasking = false;
             task.taskAtiva = false;
             gameManager.totalTasksAtivas--;

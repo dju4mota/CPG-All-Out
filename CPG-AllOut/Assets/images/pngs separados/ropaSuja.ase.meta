@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: e544913e3354cdd40aa9a8527058cfc4
-=======
-guid: c9a127515a2aa2043968c5029114c56a
->>>>>>> ba218a898f1d9641b1be419324c4a8f62c7aa146
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +124,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: ropaSuja
     originalName: 
-<<<<<<< HEAD
-    pivot: {x: -8.299999, y: -4.746479}
-=======
     pivot: {x: 0.5300682, y: -0.17571428}
->>>>>>> ba218a898f1d9641b1be419324c4a8f62c7aa146
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -140,15 +132,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-<<<<<<< HEAD
-      width: 60
-      height: 71
-    spriteID: 59e47ef46d6f44a499b79df393eeed5e
-=======
       width: 1613
       height: 700
-    spriteID: ef94145a54136ed4fb2ae88a3df91229
->>>>>>> ba218a898f1d9641b1be419324c4a8f62c7aa146
+    spriteID: 058e64c77e6160a4ba92272e35728f58
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,19 +156,11 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-<<<<<<< HEAD
-        x: 1458
-        y: 337
-        width: 60
-        height: 71
-      spriteId: 59e47ef46d6f44a499b79df393eeed5e
-=======
         x: 105
         y: 123
         width: 1613
         height: 700
-      spriteId: ef94145a54136ed4fb2ae88a3df91229
->>>>>>> ba218a898f1d9641b1be419324c4a8f62c7aa146
+      spriteId: 058e64c77e6160a4ba92272e35728f58
     linkedCells: []
     parentIndex: -1
   platformSettings:
