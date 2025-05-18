@@ -14,10 +14,12 @@ public class CutsceneController : MonoBehaviour
     public Image fadeInImage;         // Atribua no Inspector
     public Image fadeOutImage;         // Atribua no Inspector
     public float fadeDuration = 2f;   // Tempo para o fade-in
+    public Button jogar;
 
     void Start()
     {
         StartCoroutine(StartAfterDelay());
+        jogar.onClick.AddListener(Jogar);
     }
 
     IEnumerator StartAfterDelay()
@@ -105,6 +107,12 @@ public class CutsceneController : MonoBehaviour
         color.a = 1f;
         targetImage.color = color;
         yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene("Felipe");
+        jogar.gameObject.SetActive(true);
     }
+
+    public void Jogar()
+    {
+        SceneManager.LoadScene("Felipe");    
+    }
+    
 }

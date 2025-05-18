@@ -1,7 +1,9 @@
 using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
@@ -27,7 +29,9 @@ public class GameManager : MonoBehaviour
     public float tempoOffSetMenu;
     
     public AudioSource _audioSpawn;
-
+    public float fadeDuration = 1f;   // Tempo para o fade-in
+    public Image fadeInImage;   
+    
     void Start()
     {
         tempoOffSetMenu = Time.time;
@@ -89,7 +93,7 @@ public class GameManager : MonoBehaviour
         GameData.i.tarefasFeitas = tarefasFeitas;
         GameData.i.pontos = pontos;
         GameData.i.dinheiros = dinheiros;
-        SceneManager.LoadScene("End");
+        StartCoroutine(FadeOutImage(fadeInImage, fadeDuration));
     }
 
     public void pontuacao(int ponto, int dinheiro)
@@ -177,7 +181,28 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    int sorteiaPosicao() {
-        return Random.Range(5, 10);
+    IEnumerator FadeOutImage(Image targetImage, float duration)
+    {
+        Color color = targetImage.color;
+        color.a = 0f;
+        targetImage.color = color;
+
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            color.a = Mathf.Lerp(0f, 1f, t);
+            targetImage.color = color;
+
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        // Garante alpha final
+        color.a = 1f;
+        targetImage.color = color;
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("End");
     }
 }
