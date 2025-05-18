@@ -65,14 +65,21 @@ public class Task : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Morgana") && PopUp == null)
+        if (other.CompareTag("Morgana"))
         {
-            PopUp = Instantiate(TaskType, TaskManager, false);
-            PopUp.GetComponent<PressTask>().task = this;
-            PopUp.GetComponent<PressTask>().key = Random.Range(0, 4);
-            Debug.Log(PopUp.GetComponent<PressTask>().isQTA = Random.Range(0, 2) == 1);
-            PopUp.GetComponent<PressTask>().SetUp();
-            isBeenDone = true;
+            if (PopUp == null)
+            {
+                PopUp = Instantiate(TaskType, TaskManager, false);
+                PopUp.GetComponent<PressTask>().task = this;
+                PopUp.GetComponent<PressTask>().key = Random.Range(0, 4);
+                Debug.Log(PopUp.GetComponent<PressTask>().isQTA = Random.Range(0, 2) == 1);
+                PopUp.GetComponent<PressTask>().SetUp();
+                isBeenDone = true;
+            }
+            else
+            {
+                PopUp.SetActive(true);
+            }
         }
     }
 
@@ -81,7 +88,7 @@ public class Task : MonoBehaviour
         if (other.CompareTag("Morgana"))
         {
             isBeenDone = false;
-            Destroy(PopUp);
+            PopUp.SetActive(false);
         }
     }
 
