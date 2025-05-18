@@ -100,22 +100,15 @@ public class GameManager : MonoBehaviour
     {
         pontos += ponto;
         pointsController.ShowPoints(ponto);
-        //textoPontos.text = "pontos: " + pontos;
+        dinheiros += dinheiro;
         textoDinheiro.text = "R$ " + dinheiros;
         if (ponto > 0f)
         {
             tarefasFeitas++;
         }
 
-        dinheiros += dinheiro;
-        if (dinheiros >= -1)
-        {
-            ChangeVertexColor(new Color(201,250,131));
-        }
-        else
-        {
-            ChangeVertexColor(new Color(205,41,52));
-        }
+        
+        
         
     }
     
@@ -155,10 +148,10 @@ public class GameManager : MonoBehaviour
         switch (totalTasks)
         {
             case 4:
-                tempoEntreTasks = 4;
+                tempoEntreTasks = 3f;
                 break;
             case 7:
-                tempoEntreTasks = 3f;
+                tempoEntreTasks = 2.5f;
                 break;
             case 12:
                 tempoEntreTasks = 2f;

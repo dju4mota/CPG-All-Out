@@ -93,7 +93,7 @@ MonoBehaviour:
   Square: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   image: {fileID: 3017429715632311906}
   imageButton: {fileID: 7280317482655869071}
-  fillSpeed: 1
+  fillSpeed: 0.85
   player: {fileID: 0}
   gameManager: {fileID: 0}
   task: {fileID: 0}

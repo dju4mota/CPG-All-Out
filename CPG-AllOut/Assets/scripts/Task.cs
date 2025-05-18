@@ -37,7 +37,7 @@ public class Task : MonoBehaviour
 
     public void Inicia()
     {
-        tempoMax = Random.Range(10, 16);
+        tempoMax = Random.Range(8, 15);
         spriteRenderer = GetComponent<SpriteRenderer>();
         tempo = tempoMax;
         notificacao = HudController.i.CreateTask(nome, descricao, tempo);
@@ -63,6 +63,7 @@ public class Task : MonoBehaviour
             notificacao.GetComponent<TarefaController>().KillTask(false);
             GameManager.i.totalTasksAtivas--;
             gameObject.SetActive(false);
+            FailTask();
         }
         
         if (gameObject != null)

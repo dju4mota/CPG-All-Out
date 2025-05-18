@@ -90,7 +90,7 @@ public class PressTask : MonoBehaviour
         {
             player.isTasking = true;
             Debug.Log("subingo");
-            image.fillAmount += 0.4f * multiplierCafe;
+            image.fillAmount += 0.3f * multiplierCafe;
             image.fillAmount = Mathf.Clamp01(image.fillAmount);
         }
         else

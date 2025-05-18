@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 0ee3b4793e79bb44abf597747ca71557
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4008495330464673655
+    second: TITULO MAIOR_0
+  - first:
+      213: 2504704267295371248
+    second: TITULO MAIOR_1
+  - first:
+      213: -7373020588438839831
+    second: TITULO MAIOR_2
+  - first:
+      213: -4083571176287770626
+    second: TITULO MAIOR_3
+  - first:
+      213: 4006517588382336471
+    second: TITULO MAIOR_4
+  - first:
+      213: -4947835298560104824
+    second: TITULO MAIOR_5
+  - first:
+      213: 8379386978299285383
+    second: TITULO MAIOR_6
+  - first:
+      213: -3349593774525025241
+    second: TITULO MAIOR_7
+  - first:
+      213: -5607748150952341044
+    second: TITULO MAIOR_8
+  - first:
+      213: 2118866164543469609
+    second: TITULO MAIOR_9
+  - first:
+      213: -2231889155846591876
+    second: TITULO MAIOR_10
+  - first:
+      213: -9167922319507577337
+    second: TITULO MAIOR_11
+  - first:
+      213: -2238927697622860515
+    second: TITULO MAIOR_12
+  - first:
+      213: 5596513331645012519
+    second: TITULO MAIOR_13
+  - first:
+      213: -4086407780454285033
+    second: TITULO MAIOR_14
+  - first:
+      213: -5873290722334592295
+    second: TITULO MAIOR_15
+  - first:
+      213: 177420804227027932
+    second: TITULO MAIOR_16
+  - first:
+      213: 1087383333380321025
+    second: TITULO MAIOR_17
+  - first:
+      213: 3836409796809013638
+    second: TITULO MAIOR_18
+  - first:
+      213: 2086013340417846253
+    second: TITULO MAIOR_19
+  - first:
+      213: -6888801439506047612
+    second: TITULO MAIOR_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TITULO MAIOR_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 547
+        width: 145
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77fa820e34901a730800000000000000
+      internalID: 4008495330464673655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_1
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 652
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ffab87b24f72c220800000000000000
+      internalID: 2504704267295371248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_2
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 545
+        width: 106
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed1678b6d4cda990800000000000000
+      internalID: -7373020588438839831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_3
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 651
+        width: 81
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7e75e96ad3457c0800000000000000
+      internalID: -4083571176287770626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_4
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 547
+        width: 116
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d542e9e4820a9730800000000000000
+      internalID: 4006517588382336471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_5
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 547
+        width: 34
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 886af2eb202c55bb0800000000000000
+      internalID: -4947835298560104824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_6
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 545
+        width: 105
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f00159f00994470800000000000000
+      internalID: 8379386978299285383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_7
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 547
+        width: 97
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 724739f753ad381d0800000000000000
+      internalID: -3349593774525025241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_8
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 545
+        width: 105
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc1d1a094c64d22b0800000000000000
+      internalID: -5607748150952341044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_9
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 545
+        width: 107
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9283538ec89b76d10800000000000000
+      internalID: 2118866164543469609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 411
+        width: 53
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7aa7b743acb601e0800000000000000
+      internalID: -2231889155846591876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_11
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 309
+        width: 98
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7062061693ff4c080800000000000000
+      internalID: -9167922319507577337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_12
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 309
+        width: 98
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1df7611f1bbde0e0800000000000000
+      internalID: -2238927697622860515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_13
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 311
+        width: 152
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a5079393fcaad40800000000000000
+      internalID: 5596513331645012519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 77
+        width: 152
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71141ae36c92a47c0800000000000000
+      internalID: -4086407780454285033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_15
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 74
+        width: 107
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d236a0c431ed7ea0800000000000000
+      internalID: -5873290722334592295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_16
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 77
+        width: 79
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd357bb0843567200800000000000000
+      internalID: 177420804227027932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_17
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 74
+        width: 105
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f60d86169271f00800000000000000
+      internalID: 1087383333380321025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_18
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 77
+        width: 96
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68931af426aad3530800000000000000
+      internalID: 3836409796809013638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_19
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 30
+        width: 105
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: debe458b41203fc10800000000000000
+      internalID: 2086013340417846253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TITULO MAIOR_20
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 74
+        width: 107
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48dda06d69f0660a0800000000000000
+      internalID: -6888801439506047612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TITULO MAIOR_0: 4008495330464673655
+      TITULO MAIOR_1: 2504704267295371248
+      TITULO MAIOR_10: -2231889155846591876
+      TITULO MAIOR_11: -9167922319507577337
+      TITULO MAIOR_12: -2238927697622860515
+      TITULO MAIOR_13: 5596513331645012519
+      TITULO MAIOR_14: -4086407780454285033
+      TITULO MAIOR_15: -5873290722334592295
+      TITULO MAIOR_16: 177420804227027932
+      TITULO MAIOR_17: 1087383333380321025
+      TITULO MAIOR_18: 3836409796809013638
+      TITULO MAIOR_19: 2086013340417846253
+      TITULO MAIOR_2: -7373020588438839831
+      TITULO MAIOR_20: -6888801439506047612
+      TITULO MAIOR_3: -4083571176287770626
+      TITULO MAIOR_4: 4006517588382336471
+      TITULO MAIOR_5: -4947835298560104824
+      TITULO MAIOR_6: 8379386978299285383
+      TITULO MAIOR_7: -3349593774525025241
+      TITULO MAIOR_8: -5607748150952341044
+      TITULO MAIOR_9: 2118866164543469609
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
