@@ -45,8 +45,9 @@ public class Task : MonoBehaviour
             taskAtiva = false;
             Destroy(PopUp);
             Destroy(notificacao);
-            gameObject.SetActive(false);
             GameManager.i.totalTasksAtivas--;
+            Debug.Log("aaa");
+            gameObject.SetActive(false);
         }
 
         if (gameObject != null)

@@ -63,15 +63,15 @@ public class GameManager : MonoBehaviour
                     sorteiaTask();
                     break;
                 case 4:
+                case 5:
+                case 6:
+                case 7:
                     sorteiaTask();
                     sorteiaTask();
                     sorteiaTask();
                     break;
-                case 7: 
+                case >8: 
                     sorteiaTask();
-                    sorteiaTask();
-                    break;
-                case >7:
                     sorteiaTask();
                     break;
             }
@@ -110,7 +110,7 @@ public class GameManager : MonoBehaviour
                 tasks[index].Inicia();
                 totalTasksAtivas++;
                 totalTasks++;
-                break;
+                return;
             }
         }
     }
