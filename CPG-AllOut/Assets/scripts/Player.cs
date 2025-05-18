@@ -28,12 +28,23 @@ public class Player : MonoBehaviour
 
         if (moveDirection != Vector2.zero)
             Render();
+
+        if (ghost.activeSelf)
+        {
+            ghost.transform.localPosition = -moveDirection.normalized * 0.02f;
+        }
     }
 
     public void Cafeinado()
     {
         cafeinado = true;
         ghost.SetActive(true);
+    }
+    
+    public void Descafeinado()
+    {
+        cafeinado = false;
+        ghost.SetActive(false);
     }
 
     private void FixedUpdate()
@@ -47,7 +58,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            movePosition = (speed * Time.fixedDeltaTime * moveDirection.normalized) + rb.position;   
+            movePosition = (speed * Time.fixedDeltaTime * moveDirection.normalized) + rb.position;
         }
         rb.MovePosition(movePosition);
 
