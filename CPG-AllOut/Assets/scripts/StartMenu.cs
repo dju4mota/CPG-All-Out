@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
 
 public class StartMenu : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class StartMenu : MonoBehaviour
     public Button tuturialButton;
     public Button voltar;
     public GameObject tuturial;
+    public Image fadeOutImage;         // Atribua no Inspector
+    public float fadeDuration = 1f;   // Tempo para o fade-in
 
 
     private void Start()
@@ -19,12 +22,13 @@ public class StartMenu : MonoBehaviour
         voltar.onClick.AddListener(TutorialDeactivate);
     }
 
-    private static void StartNewGame()
+    private void StartNewGame()
     {
         SceneManager.LoadScene("Cutscene");
+        // StartCoroutine(FadeOutImage(fadeOutImage, fadeDuration));
     }
 
-    private static void Quit()
+    private void Quit()
     {
         Application.Quit();
     }
@@ -36,5 +40,59 @@ public class StartMenu : MonoBehaviour
     private void TutorialDeactivate()
     {
         tuturial.SetActive(false);  // desativa
+    }
+
+
+    //    IEnumerator FadeInImage(Image targetImage, float duration)
+    // {
+    //     Color color = targetImage.color;
+    //     color.a = 0f;
+    //     targetImage.color = color;
+
+    //     float elapsed = 0f;
+
+    //     while (elapsed < duration)
+    //     {
+    //         float t = elapsed / duration;
+    //         color.a = Mathf.Lerp(0f, 1f, t);
+    //         targetImage.color = color;
+
+    //         elapsed += Time.deltaTime;
+    //         yield return null;
+    //     }
+
+    //     // Garante alpha final
+    //     color.a = 1f;
+    //     targetImage.color = color;
+    //     Casa1.SetActive(true);
+    //     yield return new WaitForSeconds(2f);
+    //     Casa2.SetActive(true);
+    //     yield return new WaitForSeconds(2f);
+    //     StartCoroutine(FadeOutImage(fadeOutImage, fadeDuration));
+    // }
+
+    IEnumerator FadeOutImage(Image targetImage, float duration)
+    {
+        Color color = targetImage.color;
+        color.a = 0f;
+        targetImage.color = color;
+
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            color.a = Mathf.Lerp(0f, 1f, t);
+            targetImage.color = color;
+
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        // Garante alpha final
+        color.a = 1f;
+        targetImage.color = color;
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("Cutscene");
     }
 }
