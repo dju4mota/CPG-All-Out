@@ -26,6 +26,7 @@ public class Task : MonoBehaviour
     public bool pisca = false;
     public AudioSource _audio;
     public AudioClip clip;
+    public int dinheiro;
 
     public void Start()
     {
@@ -112,13 +113,13 @@ public class Task : MonoBehaviour
 
     public void CompleteTask()
     {
-        GameManager.i.pontuacao((int)tempo*10);
+        GameManager.i.pontuacao((int)tempo*10, dinheiro);
     }
 
 
     public void FailTask()
     {
-        GameManager.i.pontuacao(-(int)tempoMax);
+        GameManager.i.pontuacao(-(int)tempoMax, dinheiro);
     }
     
 }

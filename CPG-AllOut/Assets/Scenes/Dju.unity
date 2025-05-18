@@ -180,6 +180,7 @@ MonoBehaviour:
   _audio: {fileID: 80069574}
   _audioErro: {fileID: 568089105}
   clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  dinheiro: 0
 --- !u!58 &57514052
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1834,6 +1835,7 @@ MonoBehaviour:
   _audio: {fileID: 80069574}
   _audioErro: {fileID: 568089105}
   clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  dinheiro: 0
 --- !u!58 &723656469
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2327,6 +2329,7 @@ MonoBehaviour:
   _audio: {fileID: 80069574}
   _audioErro: {fileID: 568089105}
   clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  dinheiro: 0
 --- !u!58 &1045970892
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2494,6 +2497,7 @@ MonoBehaviour:
   _audio: {fileID: 80069574}
   _audioErro: {fileID: 568089105}
   clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  dinheiro: 0
 --- !u!58 &1051475218
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2646,6 +2650,7 @@ MonoBehaviour:
   _audio: {fileID: 80069574}
   _audioErro: {fileID: 568089105}
   clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  dinheiro: 0
 --- !u!58 &1062567097
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2904,6 +2909,7 @@ MonoBehaviour:
   _audio: {fileID: 80069574}
   _audioErro: {fileID: 568089105}
   clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  dinheiro: 0
 --- !u!58 &1078392489
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3913,6 +3919,7 @@ MonoBehaviour:
   _audio: {fileID: 80069574}
   _audioErro: {fileID: 568089105}
   clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  dinheiro: 0
 --- !u!58 &1371627407
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4262,6 +4269,7 @@ MonoBehaviour:
   _audio: {fileID: 80069574}
   _audioErro: {fileID: 568089105}
   clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  dinheiro: 0
 --- !u!1 &1548690558
 GameObject:
   m_ObjectHideFlags: 0
@@ -4508,6 +4516,7 @@ MonoBehaviour:
   _audio: {fileID: 80069574}
   _audioErro: {fileID: 568089105}
   clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
+  dinheiro: 0
 --- !u!1 &1881374812
 GameObject:
   m_ObjectHideFlags: 0
