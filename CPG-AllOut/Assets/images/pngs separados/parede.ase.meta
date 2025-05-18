@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fe7398f92eff4b9419b009db5cc374a6
+guid: c2fd96575a03bf543b428df0e8ac5d1d
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -122,7 +122,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: mapa
+  - name: parede
     originalName: 
     pivot: {x: 0.5300682, y: -0.17571428}
     alignment: 9
@@ -134,7 +134,7 @@ ScriptedImporter:
       y: 4
       width: 1613
       height: 700
-    spriteID: 9d01b1e893081d642b3ed438a59ae095
+    spriteID: 4b0f26a5a7ea1e4408ef55da164b7d1e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -146,13 +146,13 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1040134045
-    name: mapa
+    guid: -910422069
+    name: parede
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: mapa
+    - name: parede
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -160,7 +160,7 @@ ScriptedImporter:
         y: 123
         width: 1613
         height: 700
-      spriteId: 9d01b1e893081d642b3ed438a59ae095
+      spriteId: 4b0f26a5a7ea1e4408ef55da164b7d1e
     linkedCells: []
     parentIndex: -1
   platformSettings:
