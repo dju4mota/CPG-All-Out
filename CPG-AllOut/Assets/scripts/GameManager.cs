@@ -126,6 +126,7 @@ public class GameManager : MonoBehaviour
                 tasks[index].gameObject.SetActive(true);
                 tasks[index].taskAtiva = true;
                 tasks[index].Inicia();
+                _audioSpawn.Play();
                 totalTasksAtivas++;
                 totalTasks++;
                 return;

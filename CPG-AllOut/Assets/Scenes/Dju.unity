@@ -1959,7 +1959,6 @@ MonoBehaviour:
   pointsController: {fileID: 794223466}
   tasks:
   - {fileID: 1731510332}
-  - {fileID: 0}
   - {fileID: 1406684136}
   - {fileID: 1045970891}
   - {fileID: 1371627406}
@@ -2022,10 +2021,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dd7126fbb3c7a4947b090ff7b296d246, type: 3}
-  m_Resource: {fileID: 8300000, guid: dd7126fbb3c7a4947b090ff7b296d246, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a66f94062493c1946b48eb5ebcc66c8f, type: 3}
+  m_Resource: {fileID: 8300000, guid: a66f94062493c1946b48eb5ebcc66c8f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.6
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
