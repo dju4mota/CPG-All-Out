@@ -300,6 +300,7 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
+  _audioErro: {fileID: 1581736841}
   clip: {fileID: 8300000, guid: 43aeab4204f0a50458f6603f883b33c2, type: 3}
   dinheiro: 350
 --- !u!58 &248573033
@@ -1274,6 +1275,7 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
+  _audioErro: {fileID: 1581736841}
   clip: {fileID: 8300000, guid: 8b0ec24a330842d4b91e5dcbdeaf8502, type: 3}
   dinheiro: 0
 --- !u!58 &624034315
@@ -2094,6 +2096,7 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
+  _audioErro: {fileID: 1581736841}
   clip: {fileID: 8300000, guid: 751bf16098488234bba8e94688db4738, type: 3}
   dinheiro: -25
 --- !u!58 &1084461380
@@ -2701,6 +2704,7 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
+  _audioErro: {fileID: 1581736841}
   clip: {fileID: 8300000, guid: 05a384813fc574945895908392a1fafd, type: 3}
   dinheiro: 0
 --- !u!58 &1315065301
@@ -2989,6 +2993,7 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
+  _audioErro: {fileID: 1581736841}
   clip: {fileID: 8300000, guid: f5fc539dedbc58f4b889805ed3c23927, type: 3}
   dinheiro: -200
 --- !u!58 &1345770988
@@ -3127,7 +3132,7 @@ MonoBehaviour:
   totalTasks: 0
   totalTasksAtivas: 0
   tarefasFeitas: 0
-  duracaoTotal: 60
+  duracaoTotal: 1
   tempoEntreTasks: 3
   tempoTotal: 0
   tempoSemTask: 0
@@ -3181,7 +3186,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: dd7126fbb3c7a4947b090ff7b296d246, type: 3}
   m_Resource: {fileID: 8300000, guid: dd7126fbb3c7a4947b090ff7b296d246, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.8
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3324,6 +3329,7 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
+  _audioErro: {fileID: 1581736841}
   clip: {fileID: 8300000, guid: 72fa2799ae490d64ab72eef81e8032fe, type: 3}
   dinheiro: 0
 --- !u!58 &1372184696
@@ -3449,6 +3455,8 @@ MonoBehaviour:
   pontos: 0
   dinheiros: 0
   tarefasFeitas: 0
+  totalTasks: 0
+  gameManager: {fileID: 0}
 --- !u!4 &1442087586
 Transform:
   m_ObjectHideFlags: 0
@@ -3900,6 +3908,7 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
+  _audioErro: {fileID: 1581736841}
   clip: {fileID: 8300000, guid: 9b74dbffbaedb7346932163ed64e5b82, type: 3}
   dinheiro: 50
 --- !u!58 &1520650789
@@ -4113,10 +4122,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 66a9cddf00b5af2499dcfe5ddb5296bb, type: 3}
-  m_Resource: {fileID: 8300000, guid: 66a9cddf00b5af2499dcfe5ddb5296bb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1269ef89c81df67498ed649660bb9448, type: 3}
+  m_Resource: {fileID: 8300000, guid: 1269ef89c81df67498ed649660bb9448, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4532,10 +4541,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3a9ce4c4f65b65948b270be6a4af6b06, type: 3}
-  m_Resource: {fileID: 8300000, guid: 3a9ce4c4f65b65948b270be6a4af6b06, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 51023fdd72e5c894db8749be07933de7, type: 3}
+  m_Resource: {fileID: 8300000, guid: 51023fdd72e5c894db8749be07933de7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4784,6 +4793,7 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
+  _audioErro: {fileID: 1581736841}
   clip: {fileID: 8300000, guid: 62b6a38686ad88c4d8daf4326c94ba21, type: 3}
   dinheiro: 0
 --- !u!58 &1759182058
@@ -5054,6 +5064,7 @@ MonoBehaviour:
   notificacao: {fileID: 0}
   pisca: 0
   _audio: {fileID: 741722492}
+  _audioErro: {fileID: 1581736841}
   clip: {fileID: 8300000, guid: 05a384813fc574945895908392a1fafd, type: 3}
   dinheiro: 0
 --- !u!58 &1874075967
