@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 
 public class Task : MonoBehaviour
@@ -65,6 +66,7 @@ public class Task : MonoBehaviour
         {
             PopUp = Instantiate(TaskType, TaskManager, false);
             PopUp.GetComponent<PressTask>().task = this;
+            PopUp.GetComponent<PressTask>().key = Random.Range(0, 4);
 
             isBeenDone = true;
         }

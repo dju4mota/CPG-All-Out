@@ -93,6 +93,10 @@ MonoBehaviour:
   fillSpeed: 1
   player: {fileID: 0}
   gameManager: {fileID: 0}
+  task: {fileID: 0}
+  key: 0
+  keytext: {fileID: 4448900273833178066}
+  keyCode: 0
 --- !u!1 &2080834956390222002
 GameObject:
   m_ObjectHideFlags: 0
