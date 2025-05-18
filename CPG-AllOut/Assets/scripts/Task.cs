@@ -24,6 +24,8 @@ public class Task : MonoBehaviour
     public float tempo;
     public GameObject notificacao;
     public bool pisca = false;
+    public AudioSource audio;
+    public AudioClip clip;
 
     public void Start()
     {
