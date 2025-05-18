@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: e544913e3354cdd40aa9a8527058cfc4
-=======
-guid: c9a127515a2aa2043968c5029114c56a
->>>>>>> ba218a898f1d9641b1be419324c4a8f62c7aa146
+guid: a539fda7cbf99804c8ac0ff4dd3afb79
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -126,13 +122,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: ropaSuja
+  - name: parede
     originalName: 
-<<<<<<< HEAD
-    pivot: {x: -8.299999, y: -4.746479}
-=======
     pivot: {x: 0.5300682, y: -0.17571428}
->>>>>>> ba218a898f1d9641b1be419324c4a8f62c7aa146
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -140,15 +132,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-<<<<<<< HEAD
-      width: 60
-      height: 71
-    spriteID: 59e47ef46d6f44a499b79df393eeed5e
-=======
       width: 1613
       height: 700
-    spriteID: ef94145a54136ed4fb2ae88a3df91229
->>>>>>> ba218a898f1d9641b1be419324c4a8f62c7aa146
+    spriteID: 2eb7f5e5cc9d9eb4a998745ecc591d5c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,29 +146,21 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1649087237
-    name: ropaSuja
+    guid: -910422069
+    name: parede
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: ropaSuja
+    - name: parede
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-<<<<<<< HEAD
-        x: 1458
-        y: 337
-        width: 60
-        height: 71
-      spriteId: 59e47ef46d6f44a499b79df393eeed5e
-=======
         x: 105
         y: 123
         width: 1613
         height: 700
-      spriteId: ef94145a54136ed4fb2ae88a3df91229
->>>>>>> ba218a898f1d9641b1be419324c4a8f62c7aa146
+      spriteId: 2eb7f5e5cc9d9eb4a998745ecc591d5c
     linkedCells: []
     parentIndex: -1
   platformSettings:

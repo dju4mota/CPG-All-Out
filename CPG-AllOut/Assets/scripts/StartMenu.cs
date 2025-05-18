@@ -16,7 +16,7 @@ public class StartMenu : MonoBehaviour
 
     private static void StartNewGame()
     {
-        SceneManager.LoadScene("Dju");
+        SceneManager.LoadScene("Felipe");
     }
 
     private static void Quit()
