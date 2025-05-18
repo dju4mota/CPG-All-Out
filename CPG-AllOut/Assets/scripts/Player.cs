@@ -4,15 +4,19 @@ public class Player : MonoBehaviour
 {
 
     public float speed = 5f;
+    private float speedcafe;
+    public GameObject ghost;
     [SerializeField]
     private Rigidbody2D rb;
     public Vector2 moveDirection;
     public CircleCollider2D coll;
     public bool isTasking;
-    //public bool freeMovement;
+    public bool cafeinado;
+    Vector3 movePosition;
 
     void Start()
     {
+        speedcafe = 2 * speed;
     }
 
     void Update()
@@ -22,8 +26,14 @@ public class Player : MonoBehaviour
 
         moveDirection = new Vector2(horizontal, vertical);
 
-        if(moveDirection != Vector2.zero)
+        if (moveDirection != Vector2.zero)
             Render();
+    }
+
+    public void Cafeinado()
+    {
+        cafeinado = true;
+        ghost.SetActive(true);
     }
 
     private void FixedUpdate()
@@ -31,7 +41,14 @@ public class Player : MonoBehaviour
         if (isTasking)
             return;
 
-        Vector3 movePosition = (speed * Time.fixedDeltaTime * moveDirection.normalized) + rb.position;
+        if (cafeinado)
+        {
+            movePosition = (speedcafe * Time.fixedDeltaTime * moveDirection.normalized) + rb.position;
+        }
+        else
+        {
+            movePosition = (speed * Time.fixedDeltaTime * moveDirection.normalized) + rb.position;   
+        }
         rb.MovePosition(movePosition);
 
     }
